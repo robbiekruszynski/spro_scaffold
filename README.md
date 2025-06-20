@@ -1,11 +1,12 @@
-# 🏗 Scaffold-ETH 2
+# 🏗 Scaffold-ETH 2 with Espresso Integration
 
 <h4 align="center">
   <a href="https://docs.scaffoldeth.io">Documentation</a> |
-  <a href="https://scaffoldeth.io">Website</a>
+  <a href="https://scaffoldeth.io">Website</a> |
+  <a href="https://docs.espressosys.com">Espresso Documentation</a>
 </h4>
 
-🧪 An open-source, up-to-date toolkit for building decentralized applications (dapps) on the Ethereum blockchain. It's designed to make it easier for developers to create and deploy smart contracts and build user interfaces that interact with those contracts.
+🧪 An open-source, up-to-date toolkit for building decentralized applications (dapps) on the Ethereum blockchain with Espresso Systems integration. This boilerplate demonstrates how to integrate Espresso's sequencer API into your dApp.
 
 ⚙️ Built using NextJS, RainbowKit, Foundry/Hardhat, Wagmi, Viem, and Typescript.
 
@@ -14,8 +15,16 @@
 - 🧱 [**Components**](https://docs.scaffoldeth.io/components/): Collection of common web3 components to quickly build your frontend.
 - 🔥 **Burner Wallet & Local Faucet**: Quickly test your application with a burner wallet and local faucet.
 - 🔐 **Integration with Wallet Providers**: Connect to different wallet providers and interact with the Ethereum network.
+- 🌟 **Espresso Integration**: Example integration with Espresso Systems' sequencer API.
 
-![Debug Contracts tab](https://github.com/scaffold-eth/scaffold-eth-2/assets/55535804/b237af0c-5027-4849-a5c1-2e31495cccb1)
+## Espresso Integration Features
+
+This boilerplate includes:
+
+- Smart contract integration with Espresso's sequencer API
+- Frontend components for submitting transactions to Espresso
+- Example implementation of transaction processing
+- Integration with Espresso's block processing system
 
 ## Requirements
 
@@ -27,7 +36,7 @@ Before you begin, you need to install the following tools:
 
 ## Quickstart
 
-To get started with Scaffold-ETH 2, follow the steps below:
+To get started with Scaffold-ETH 2 and Espresso integration, follow the steps below:
 
 1. Install the latest version of Scaffold-ETH 2
 
@@ -37,16 +46,11 @@ npx create-eth@latest
 
 This command will install all the necessary packages and dependencies, so it might take a while.
 
-> [!NOTE]
-> You can also initialize your project with one of our extensions to add specific features or starter-kits. Learn more in our [extensions documentation](https://docs.scaffoldeth.io/extensions/).
-
 2. Run a local network in the first terminal:
 
 ```
 yarn chain
 ```
-
-This command starts a local Ethereum network that runs on your local machine and can be used for testing and development. Learn how to [customize your network configuration](https://docs.scaffoldeth.io/quick-start/environment#1-initialize-a-local-blockchain).
 
 3. On a second terminal, deploy the test contract:
 
@@ -54,17 +58,23 @@ This command starts a local Ethereum network that runs on your local machine and
 yarn deploy
 ```
 
-This command deploys a test smart contract to the local network. You can find more information about how to customize your contract and deployment script in our [documentation](https://docs.scaffoldeth.io/quick-start/environment#2-deploy-your-smart-contract).
-
 4. On a third terminal, start your NextJS app:
 
 ```
 yarn start
 ```
 
-Visit your app on: `http://localhost:3000`. You can interact with your smart contract using the `Debug Contracts` page. You can tweak the app config in `packages/nextjs/scaffold.config.ts`.
+Visit your app on: `http://localhost:3000`. You can interact with the Espresso integration using the `/espresso` route.
 
-**What's next**:
+## Espresso Integration Usage
+
+1. Navigate to `/espresso` in your browser
+2. Connect your wallet
+3. Enter a transaction payload
+4. Submit the transaction to Espresso's sequencer
+5. Monitor the transaction status
+
+## What's next
 
 Visit the [What's next section of our docs](https://docs.scaffoldeth.io/quick-start/environment#whats-next) to learn how to:
 
@@ -74,4 +84,10 @@ Visit the [What's next section of our docs](https://docs.scaffoldeth.io/quick-st
 - Edit the app config
 - Writing and running tests
 - [Setting up external services and API keys](https://docs.scaffoldeth.io/deploying/deploy-smart-contracts#configuration-of-third-party-services-for-production-grade-apps)
+
+## Espresso Resources
+
+- [Espresso Documentation](https://docs.espressosys.com)
+- [Espresso API Reference](https://docs.espressosys.com/network/api-reference/sequencer-api)
+- [Espresso GitHub](https://github.com/EspressoSystems)
 
